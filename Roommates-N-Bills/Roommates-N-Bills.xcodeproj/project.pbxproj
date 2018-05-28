@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1B5A08CB9479A4ACF51AA3 /* Pods_Roommates_N_Bills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B567665D82CC786FBF7AAAB3 /* Pods_Roommates_N_Bills.framework */; };
+		A711EB4420BA6306001F509C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A711EB4320BA6306001F509C /* AppDelegate.swift */; };
+		A711EB4620BA6306001F509C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A711EB4520BA6306001F509C /* InitialViewController.swift */; };
+		A711EB4920BA6306001F509C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711EB4720BA6306001F509C /* Main.storyboard */; };
+		A711EB4B20BA6306001F509C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A711EB4A20BA6306001F509C /* Assets.xcassets */; };
+		A711EB4E20BA6306001F509C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711EB4C20BA6306001F509C /* LaunchScreen.storyboard */; };
+		A76F02F820BB8F060034BC13 /* Gradient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02F720BB8F060034BC13 /* Gradient+Constants.swift */; };
+		A76F02FA20BBC64B0034BC13 /* CreateNewHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */; };
+		A76F02FD20BBD0080034BC13 /* JoinNewHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02FC20BBD0080034BC13 /* JoinNewHouseVC.swift */; };
+		A76F02FF20BC4B280034BC13 /* CreateNewHouseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02FE20BC4B280034BC13 /* CreateNewHouseVCExtension.swift */; };
+		A76F030920BC513B0034BC13 /* GT-Walsheim-Light-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = A76F030120BC4FDB0034BC13 /* GT-Walsheim-Light-Oblique.otf */; };
+		A76F030A20BC513B0034BC13 /* GT-Walsheim-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A76F030220BC4FDB0034BC13 /* GT-Walsheim-Light.otf */; };
+		A76F030B20BC513B0034BC13 /* GT-Walsheim-Medium-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = A76F030320BC4FDB0034BC13 /* GT-Walsheim-Medium-Oblique.otf */; };
+		A76F030C20BC513B0034BC13 /* GT-Walsheim-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A76F030420BC4FDB0034BC13 /* GT-Walsheim-Medium.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48079A4E12B62D7A1AC8AE7F /* Pods-Roommates-N-Bills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roommates-N-Bills.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roommates-N-Bills/Pods-Roommates-N-Bills.release.xcconfig"; sourceTree = "<group>"; };
+		659214CBFF53A45F548372FE /* Pods-Roommates-N-Bills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roommates-N-Bills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roommates-N-Bills/Pods-Roommates-N-Bills.debug.xcconfig"; sourceTree = "<group>"; };
+		A711EB4020BA6306001F509C /* Roommates-N-Bills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roommates-N-Bills.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A711EB4320BA6306001F509C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A711EB4520BA6306001F509C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		A711EB4820BA6306001F509C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A711EB4A20BA6306001F509C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A711EB4D20BA6306001F509C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A711EB4F20BA6306001F509C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76F02F720BB8F060034BC13 /* Gradient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Constants.swift"; sourceTree = "<group>"; };
+		A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseVC.swift; sourceTree = "<group>"; };
+		A76F02FC20BBD0080034BC13 /* JoinNewHouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNewHouseVC.swift; sourceTree = "<group>"; };
+		A76F02FE20BC4B280034BC13 /* CreateNewHouseVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseVCExtension.swift; sourceTree = "<group>"; };
+		A76F030120BC4FDB0034BC13 /* GT-Walsheim-Light-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light-Oblique.otf"; sourceTree = "<group>"; };
+		A76F030220BC4FDB0034BC13 /* GT-Walsheim-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light.otf"; sourceTree = "<group>"; };
+		A76F030320BC4FDB0034BC13 /* GT-Walsheim-Medium-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium-Oblique.otf"; sourceTree = "<group>"; };
+		A76F030420BC4FDB0034BC13 /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
+		B567665D82CC786FBF7AAAB3 /* Pods_Roommates_N_Bills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roommates_N_Bills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A711EB3D20BA6306001F509C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1B5A08CB9479A4ACF51AA3 /* Pods_Roommates_N_Bills.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		303C92D680AC76A2F38303FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B567665D82CC786FBF7AAAB3 /* Pods_Roommates_N_Bills.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74E060BEF9C3F23D31E2672A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				659214CBFF53A45F548372FE /* Pods-Roommates-N-Bills.debug.xcconfig */,
+				48079A4E12B62D7A1AC8AE7F /* Pods-Roommates-N-Bills.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A711EB3720BA6306001F509C = {
+			isa = PBXGroup;
+			children = (
+				A711EB4220BA6306001F509C /* Roommates-N-Bills */,
+				A711EB4120BA6306001F509C /* Products */,
+				74E060BEF9C3F23D31E2672A /* Pods */,
+				303C92D680AC76A2F38303FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A711EB4120BA6306001F509C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A711EB4020BA6306001F509C /* Roommates-N-Bills.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A711EB4220BA6306001F509C /* Roommates-N-Bills */ = {
+			isa = PBXGroup;
+			children = (
+				A76F02FB20BBCFEE0034BC13 /* JoinNewHouse */,
+				A711EB5620BA655C001F509C /* CreateNewHouse */,
+				A711EB5520BA6323001F509C /* Supporting Files */,
+			);
+			path = "Roommates-N-Bills";
+			sourceTree = "<group>";
+		};
+		A711EB5520BA6323001F509C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A76F030020BC4FDB0034BC13 /* GT Walsheim */,
+				A711EB4520BA6306001F509C /* InitialViewController.swift */,
+				A711EB4320BA6306001F509C /* AppDelegate.swift */,
+				A711EB4A20BA6306001F509C /* Assets.xcassets */,
+				A711EB4C20BA6306001F509C /* LaunchScreen.storyboard */,
+				A711EB4F20BA6306001F509C /* Info.plist */,
+				A711EB4720BA6306001F509C /* Main.storyboard */,
+				A76F02F720BB8F060034BC13 /* Gradient+Constants.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A711EB5620BA655C001F509C /* CreateNewHouse */ = {
+			isa = PBXGroup;
+			children = (
+				A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */,
+				A76F02FE20BC4B280034BC13 /* CreateNewHouseVCExtension.swift */,
+			);
+			path = CreateNewHouse;
+			sourceTree = "<group>";
+		};
+		A76F02FB20BBCFEE0034BC13 /* JoinNewHouse */ = {
+			isa = PBXGroup;
+			children = (
+				A76F02FC20BBD0080034BC13 /* JoinNewHouseVC.swift */,
+			);
+			path = JoinNewHouse;
+			sourceTree = "<group>";
+		};
+		A76F030020BC4FDB0034BC13 /* GT Walsheim */ = {
+			isa = PBXGroup;
+			children = (
+				A76F030120BC4FDB0034BC13 /* GT-Walsheim-Light-Oblique.otf */,
+				A76F030220BC4FDB0034BC13 /* GT-Walsheim-Light.otf */,
+				A76F030320BC4FDB0034BC13 /* GT-Walsheim-Medium-Oblique.otf */,
+				A76F030420BC4FDB0034BC13 /* GT-Walsheim-Medium.otf */,
+			);
+			path = "GT Walsheim";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A711EB3F20BA6306001F509C /* Roommates-N-Bills */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A711EB5220BA6306001F509C /* Build configuration list for PBXNativeTarget "Roommates-N-Bills" */;
+			buildPhases = (
+				669B552B23EAB6DBE953C0BE /* [CP] Check Pods Manifest.lock */,
+				A711EB3C20BA6306001F509C /* Sources */,
+				A711EB3D20BA6306001F509C /* Frameworks */,
+				A711EB3E20BA6306001F509C /* Resources */,
+				82FCD6B664556E44283D005E /* [CP] Embed Pods Frameworks */,
+				0B1ED409787E2D5D0BE1B370 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roommates-N-Bills";
+			productName = "Roommates-N-Bills";
+			productReference = A711EB4020BA6306001F509C /* Roommates-N-Bills.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A711EB3820BA6306001F509C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Appr1sing Studios";
+				TargetAttributes = {
+					A711EB3F20BA6306001F509C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A711EB3B20BA6306001F509C /* Build configuration list for PBXProject "Roommates-N-Bills" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A711EB3720BA6306001F509C;
+			productRefGroup = A711EB4120BA6306001F509C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A711EB3F20BA6306001F509C /* Roommates-N-Bills */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A711EB3E20BA6306001F509C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76F030A20BC513B0034BC13 /* GT-Walsheim-Light.otf in Resources */,
+				A76F030C20BC513B0034BC13 /* GT-Walsheim-Medium.otf in Resources */,
+				A711EB4E20BA6306001F509C /* LaunchScreen.storyboard in Resources */,
+				A76F030920BC513B0034BC13 /* GT-Walsheim-Light-Oblique.otf in Resources */,
+				A76F030B20BC513B0034BC13 /* GT-Walsheim-Medium-Oblique.otf in Resources */,
+				A711EB4B20BA6306001F509C /* Assets.xcassets in Resources */,
+				A711EB4920BA6306001F509C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B1ED409787E2D5D0BE1B370 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roommates-N-Bills/Pods-Roommates-N-Bills-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		669B552B23EAB6DBE953C0BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82FCD6B664556E44283D005E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roommates-N-Bills/Pods-Roommates-N-Bills-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A711EB3C20BA6306001F509C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A711EB4620BA6306001F509C /* InitialViewController.swift in Sources */,
+				A76F02FD20BBD0080034BC13 /* JoinNewHouseVC.swift in Sources */,
+				A711EB4420BA6306001F509C /* AppDelegate.swift in Sources */,
+				A76F02FA20BBC64B0034BC13 /* CreateNewHouseVC.swift in Sources */,
+				A76F02FF20BC4B280034BC13 /* CreateNewHouseVCExtension.swift in Sources */,
+				A76F02F820BB8F060034BC13 /* Gradient+Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A711EB4720BA6306001F509C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A711EB4820BA6306001F509C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A711EB4C20BA6306001F509C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A711EB4D20BA6306001F509C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A711EB5020BA6306001F509C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A711EB5120BA6306001F509C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A711EB5320BA6306001F509C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 659214CBFF53A45F548372FE /* Pods-Roommates-N-Bills.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJ24M7DKLZ;
+				INFOPLIST_FILE = "$(SRCROOT)/Roommates-N-Bills/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AppRising.Roommates-N-Bills";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A711EB5420BA6306001F509C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48079A4E12B62D7A1AC8AE7F /* Pods-Roommates-N-Bills.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJ24M7DKLZ;
+				INFOPLIST_FILE = "$(SRCROOT)/Roommates-N-Bills/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AppRising.Roommates-N-Bills";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A711EB3B20BA6306001F509C /* Build configuration list for PBXProject "Roommates-N-Bills" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A711EB5020BA6306001F509C /* Debug */,
+				A711EB5120BA6306001F509C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A711EB5220BA6306001F509C /* Build configuration list for PBXNativeTarget "Roommates-N-Bills" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A711EB5320BA6306001F509C /* Debug */,
+				A711EB5420BA6306001F509C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A711EB3820BA6306001F509C /* Project object */;
+}

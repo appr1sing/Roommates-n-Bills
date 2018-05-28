@@ -1,0 +1,6 @@
+framework module Pods_Roommates_N_Bills {
+  umbrella header "Pods-Roommates-N-Bills-umbrella.h"
+
+  export *
+  module * { export * }
+}
