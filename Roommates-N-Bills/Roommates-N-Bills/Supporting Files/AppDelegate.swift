@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DropDown
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = InitialViewController()
+        
+        DropDown.startListeningToKeyboard()
         
         return true
     }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 extension CreateNewHouseVC {
     
@@ -29,11 +30,6 @@ extension CreateNewHouseVC {
         self.view.addSubview(lineTwo_textfield)
         self.view.addSubview(city_textfield)
         self.view.addSubview(zip_textfield)
-        
-//        self.lineOne_textfield.backgroundColor = .clear
-//        self.lineTwo_textfield.backgroundColor = .green
-//        self.city_textfield.backgroundColor = .yellow
-//        self.zip_textfield.backgroundColor = .green
         
         let height = 0.10
         let width = 0.90
@@ -85,7 +81,10 @@ extension CreateNewHouseVC {
         self.city_textfield.textColor = .white
         self.zip_textfield.textColor = .white
         
-        
+        self.lineOne_textfield.tag = 0
+        self.lineTwo_textfield.tag = 1
+        self.city_textfield.tag = 2
+        self.zip_textfield.tag = 3
         
     }
     

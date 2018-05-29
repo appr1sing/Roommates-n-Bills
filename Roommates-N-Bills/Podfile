@@ -8,5 +8,6 @@ target 'Roommates-N-Bills' do
   # Pods for Roommates-N-Bills
 	pod ‘SnapKit’, ‘~> 4.0.0’
 	pod ‘Hero’
+	pod ‘DropDown’
 
 end

@@ -13,6 +13,11 @@
 		A711EB4920BA6306001F509C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711EB4720BA6306001F509C /* Main.storyboard */; };
 		A711EB4B20BA6306001F509C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A711EB4A20BA6306001F509C /* Assets.xcassets */; };
 		A711EB4E20BA6306001F509C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711EB4C20BA6306001F509C /* LaunchScreen.storyboard */; };
+		A7231AC220BCEF2C00C4DEE4 /* CreateNewHouseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AC120BCEF2C00C4DEE4 /* CreateNewHouseInteractor.swift */; };
+		A7231AC420BCEF4A00C4DEE4 /* CreateNewHousePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AC320BCEF4A00C4DEE4 /* CreateNewHousePresenter.swift */; };
+		A7231AC620BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AC520BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift */; };
+		A7231AC820BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AC720BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift */; };
+		A7231ACA20BCEF9700C4DEE4 /* CreateNewHouseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AC920BCEF9700C4DEE4 /* CreateNewHouseModels.swift */; };
 		A76F02F820BB8F060034BC13 /* Gradient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02F720BB8F060034BC13 /* Gradient+Constants.swift */; };
 		A76F02FA20BBC64B0034BC13 /* CreateNewHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */; };
 		A76F02FD20BBD0080034BC13 /* JoinNewHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02FC20BBD0080034BC13 /* JoinNewHouseVC.swift */; };
@@ -33,6 +38,11 @@
 		A711EB4A20BA6306001F509C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A711EB4D20BA6306001F509C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A711EB4F20BA6306001F509C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7231AC120BCEF2C00C4DEE4 /* CreateNewHouseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseInteractor.swift; sourceTree = "<group>"; };
+		A7231AC320BCEF4A00C4DEE4 /* CreateNewHousePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHousePresenter.swift; sourceTree = "<group>"; };
+		A7231AC520BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseConfigurator.swift; sourceTree = "<group>"; };
+		A7231AC720BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseRouter.swift; sourceTree = "<group>"; };
+		A7231AC920BCEF9700C4DEE4 /* CreateNewHouseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseModels.swift; sourceTree = "<group>"; };
 		A76F02F720BB8F060034BC13 /* Gradient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Constants.swift"; sourceTree = "<group>"; };
 		A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseVC.swift; sourceTree = "<group>"; };
 		A76F02FC20BBD0080034BC13 /* JoinNewHouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNewHouseVC.swift; sourceTree = "<group>"; };
@@ -120,6 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */,
+				A7231AC120BCEF2C00C4DEE4 /* CreateNewHouseInteractor.swift */,
+				A7231AC320BCEF4A00C4DEE4 /* CreateNewHousePresenter.swift */,
+				A7231AC520BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift */,
+				A7231AC720BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift */,
+				A7231AC920BCEF9700C4DEE4 /* CreateNewHouseModels.swift */,
 				A76F02FE20BC4B280034BC13 /* CreateNewHouseVCExtension.swift */,
 			);
 			path = CreateNewHouse;
@@ -273,7 +288,12 @@
 			files = (
 				A711EB4620BA6306001F509C /* InitialViewController.swift in Sources */,
 				A76F02FD20BBD0080034BC13 /* JoinNewHouseVC.swift in Sources */,
+				A7231AC420BCEF4A00C4DEE4 /* CreateNewHousePresenter.swift in Sources */,
 				A711EB4420BA6306001F509C /* AppDelegate.swift in Sources */,
+				A7231AC820BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift in Sources */,
+				A7231AC220BCEF2C00C4DEE4 /* CreateNewHouseInteractor.swift in Sources */,
+				A7231AC620BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift in Sources */,
+				A7231ACA20BCEF9700C4DEE4 /* CreateNewHouseModels.swift in Sources */,
 				A76F02FA20BBC64B0034BC13 /* CreateNewHouseVC.swift in Sources */,
 				A76F02FF20BC4B280034BC13 /* CreateNewHouseVCExtension.swift in Sources */,
 				A76F02F820BB8F060034BC13 /* Gradient+Constants.swift in Sources */,
