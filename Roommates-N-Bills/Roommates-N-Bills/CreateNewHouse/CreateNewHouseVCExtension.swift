@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SnapKit
 
 extension CreateNewHouseVC {
     
@@ -88,6 +87,10 @@ extension CreateNewHouseVC {
         
         self.lineOne_textfield.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
         
+        // MARK - Adding Button
+        self.view.addSubview(registerButton)
+        
+        
     }
     
     func setupSearchCompleter() {
@@ -97,6 +100,7 @@ extension CreateNewHouseVC {
     
     func setupDropdown() {
         self.dropDown.anchorView = lineOne_textfield
+        self.dropDown.textFont = Fonts.GTWALSHEIM_LIGHT_12!
     }
     
     

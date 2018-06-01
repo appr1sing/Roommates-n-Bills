@@ -35,4 +35,5 @@ struct Colors {
 struct Fonts {
     static let GTWALSHEIM_MED = UIFont(name: "GTWalsheimMedium", size: 20)
     static let GTWALSHEIM_MED_OBL = UIFont(name: "GTWalsheimMedium-Oblique", size: 25)
+    static let GTWALSHEIM_LIGHT_12 = UIFont(name: "GTWalsheimLight-Oblique", size: 14)
 }

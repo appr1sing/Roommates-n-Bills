@@ -32,6 +32,7 @@ class CreateNewHouseVC: UIViewController {
     let city_textfield = UITextField()
     let zip_textfield = UITextField()
     let dropDown = DropDown()
+    let registerButton = UIButton()
     
     var retrievedAddresses = [String]()
     var searchCompleter = MKLocalSearchCompleter()

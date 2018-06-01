@@ -132,12 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */,
+				A76F02FE20BC4B280034BC13 /* CreateNewHouseVCExtension.swift */,
 				A7231AC120BCEF2C00C4DEE4 /* CreateNewHouseInteractor.swift */,
 				A7231AC320BCEF4A00C4DEE4 /* CreateNewHousePresenter.swift */,
 				A7231AC520BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift */,
 				A7231AC720BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift */,
 				A7231AC920BCEF9700C4DEE4 /* CreateNewHouseModels.swift */,
-				A76F02FE20BC4B280034BC13 /* CreateNewHouseVCExtension.swift */,
 				A7231ACB20C0525000C4DEE4 /* CreateNewHouseWorker.swift */,
 			);
 			path = CreateNewHouse;
