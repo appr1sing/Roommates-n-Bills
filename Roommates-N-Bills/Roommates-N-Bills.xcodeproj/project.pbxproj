@@ -18,6 +18,7 @@
 		A7231AC620BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AC520BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift */; };
 		A7231AC820BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AC720BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift */; };
 		A7231ACA20BCEF9700C4DEE4 /* CreateNewHouseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AC920BCEF9700C4DEE4 /* CreateNewHouseModels.swift */; };
+		A7231ACC20C0525000C4DEE4 /* CreateNewHouseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231ACB20C0525000C4DEE4 /* CreateNewHouseWorker.swift */; };
 		A76F02F820BB8F060034BC13 /* Gradient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02F720BB8F060034BC13 /* Gradient+Constants.swift */; };
 		A76F02FA20BBC64B0034BC13 /* CreateNewHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */; };
 		A76F02FD20BBD0080034BC13 /* JoinNewHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F02FC20BBD0080034BC13 /* JoinNewHouseVC.swift */; };
@@ -43,6 +44,7 @@
 		A7231AC520BCEF5C00C4DEE4 /* CreateNewHouseConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseConfigurator.swift; sourceTree = "<group>"; };
 		A7231AC720BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseRouter.swift; sourceTree = "<group>"; };
 		A7231AC920BCEF9700C4DEE4 /* CreateNewHouseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseModels.swift; sourceTree = "<group>"; };
+		A7231ACB20C0525000C4DEE4 /* CreateNewHouseWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseWorker.swift; sourceTree = "<group>"; };
 		A76F02F720BB8F060034BC13 /* Gradient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Constants.swift"; sourceTree = "<group>"; };
 		A76F02F920BBC64B0034BC13 /* CreateNewHouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHouseVC.swift; sourceTree = "<group>"; };
 		A76F02FC20BBD0080034BC13 /* JoinNewHouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNewHouseVC.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				A7231AC720BCEF7E00C4DEE4 /* CreateNewHouseRouter.swift */,
 				A7231AC920BCEF9700C4DEE4 /* CreateNewHouseModels.swift */,
 				A76F02FE20BC4B280034BC13 /* CreateNewHouseVCExtension.swift */,
+				A7231ACB20C0525000C4DEE4 /* CreateNewHouseWorker.swift */,
 			);
 			path = CreateNewHouse;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A711EB4620BA6306001F509C /* InitialViewController.swift in Sources */,
+				A7231ACC20C0525000C4DEE4 /* CreateNewHouseWorker.swift in Sources */,
 				A76F02FD20BBD0080034BC13 /* JoinNewHouseVC.swift in Sources */,
 				A7231AC420BCEF4A00C4DEE4 /* CreateNewHousePresenter.swift in Sources */,
 				A711EB4420BA6306001F509C /* AppDelegate.swift in Sources */,

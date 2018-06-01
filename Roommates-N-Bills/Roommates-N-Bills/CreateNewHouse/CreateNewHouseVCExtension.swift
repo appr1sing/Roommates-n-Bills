@@ -86,6 +86,17 @@ extension CreateNewHouseVC {
         self.city_textfield.tag = 2
         self.zip_textfield.tag = 3
         
+        self.lineOne_textfield.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
+        
+    }
+    
+    func setupSearchCompleter() {
+        self.searchCompleter.delegate = self
+        self.searchCompleter.filterType = .locationsAndQueries
+    }
+    
+    func setupDropdown() {
+        self.dropDown.anchorView = lineOne_textfield
     }
     
     

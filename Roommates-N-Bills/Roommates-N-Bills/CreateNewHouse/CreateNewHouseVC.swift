@@ -12,6 +12,19 @@ import SnapKit
 import MapKit
 import DropDown
 
+protocol CreateNewHouseVCInput {
+    func displaySearchedAddress(_ viewModel: CreateNewHouse.SearchAddress.ViewModel)
+    func displayRetrievedAddresses(_ viewModel: CreateNewHouse.RetrieveAddresses.ViewModel)
+    func displayGeocodedAddress(_ viewModel: CreateNewHouse.GeoCode.ViewModel)
+}
+
+protocol CreateNewHouseVCOutput {
+    func searchAddress(_ request: CreateNewHouse.SearchAddress.Request)
+    func retrieveAddresses(_ request: CreateNewHouse.RetrieveAddresses.Request)
+    func geocodeAddress(_ request: CreateNewHouse.GeoCode.Request)
+}
+
+
 class CreateNewHouseVC: UIViewController {
 
     let lineOne_textfield = UITextField()
@@ -20,20 +33,22 @@ class CreateNewHouseVC: UIViewController {
     let zip_textfield = UITextField()
     let dropDown = DropDown()
     
+    var retrievedAddresses = [String]()
     var searchCompleter = MKLocalSearchCompleter()
     var searchResults = [MKLocalSearchCompletion]()
+    
+    var output : CreateNewHouseVCOutput!
+    var router : CreateNewHouseRouter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.layoutUI()
-        self.searchCompleter.delegate = self
-        self.searchCompleter.filterType = .locationsAndQueries
-        self.lineOne_textfield.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
-        self.dropDown.anchorView = lineOne_textfield
-        
-        
+        self.setupSearchCompleter()
+        self.setupDropdown()
+        CreateNewHouseConfigurator.sharedInstance.configure(self)
+    
     }
     
     @objc func respondToSwipeRight(_ sender: UISwipeGestureRecognizer) {
@@ -41,51 +56,85 @@ class CreateNewHouseVC: UIViewController {
         if let swipeGesture = sender as UISwipeGestureRecognizer? {
             switch swipeGesture.direction {
             case .left:
-                self.heroModalAnimationType = .slide(direction: .left)
-                self.dismiss(animated: true, completion: nil)
+                self.router.goToInitialVC()
             default:
                 break
             }
         }
     }
     
-    @objc func editingChanged(_ sender: UITextField) {
+    @objc func editingChanged(_ sender: UITextField) { 
         if let address = sender.text as String? {
-            searchCompleter.queryFragment = address
+            let result = CreateNewHouse.SearchAddress.ViewModel.Result(address: address)
+            let request = CreateNewHouse.SearchAddress.Request(address: result)
+            output.searchAddress(request)
+            //self.searchCompleter.queryFragment = address
         }
     }
-    
+    
+    func displaySearchedAddress(_ viewModel: CreateNewHouse.SearchAddress.ViewModel) {
+        self.searchCompleter.queryFragment = viewModel.displayedItems.address
+    }
+ 
+    func displayRetrievedAddresses(_ viewModel: CreateNewHouse.RetrieveAddresses.ViewModel) {
+        self.retrievedAddresses = viewModel.displayedItems.addresses
+    }
+    
+    func displayGeocodedAddress(_ viewModel: CreateNewHouse.GeoCode.ViewModel) {
+        self.configureTextfields(viewModel)
+    }
+    
+}
+
+extension CreateNewHouseVC {
+    
+    // MARK - HELPER FUNCTIONS
+    
+    private func configureDropdown(_ addresses: [String]) {
+        let result = CreateNewHouse.RetrieveAddresses.ViewModel.Result(addresses: addresses)
+        let request = CreateNewHouse.RetrieveAddresses.Request(addresses: result)
+        output.retrieveAddresses(request)
+        
+        self.dropDown.dataSource = retrievedAddresses
+        self.dropDown.direction = .bottom
+        self.dropDown.bottomOffset = CGPoint(x: 0, y: (dropDown.anchorView?.plainView.bounds.height)!)
+        self.dropDown.width = dropDown.anchorView?.plainView.bounds.width
+        self.dropDown.show()
+        self.dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+            
+            let request = CreateNewHouse.GeoCode.Request(data: CreateNewHouse.GeoCode.ViewModel.Result(fullAddress: addresses[index],
+                                                                                                       subthoroughfare: nil,
+                                                                                                       thoroughfare: nil,
+                                                                                                       sublocality: nil,
+                                                                                                       adminArea: nil,
+                                                                                                       locality: nil,
+                                                                                                       postal: nil))
+            self.output.geocodeAddress(request)
+            self.lineOne_textfield.resignFirstResponder()
+        }
+    }
+    
+    private func configureTextfields(_ viewModel: CreateNewHouse.GeoCode.ViewModel) {
+        guard let subthrufare = viewModel.displayedItems.subthoroughfare,
+              let thrufare = viewModel.displayedItems.thoroughfare,
+              let locality = viewModel.displayedItems.locality,
+              let adminArea = viewModel.displayedItems.adminArea,
+              let postal = viewModel.displayedItems.postal else { return }
+        
+        self.lineOne_textfield.text = subthrufare + " " + thrufare
+        self.city_textfield.text = locality + ", " + adminArea
+        self.zip_textfield.text = postal
+    }
+    
 }
 
 extension CreateNewHouseVC : MKLocalSearchCompleterDelegate {
     
     func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
-        searchResults = completer.results
-        let address = searchResults.map({ $0.title + " " + $0.subtitle })
-        dropDown.dataSource = address
-        dropDown.direction = .bottom
-        dropDown.bottomOffset = CGPoint(x: 0, y: (dropDown.anchorView?.plainView.bounds.height)!)
-        dropDown.width = dropDown.anchorView?.plainView.bounds.width
-        dropDown.show()
         
-        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            
-             self.lineOne_textfield.text = self.searchResults[index].title
-            let geoCoder = CLGeocoder()
-            geoCoder.geocodeAddressString(address[index]) { (placemarks, error) in
-                guard let placemarks = placemarks else { return }
-                
-                if let locality = placemarks[0].locality, let adminArea = placemarks[0].administrativeArea {
-                    self.city_textfield.text = locality + ", " + adminArea
-                }
-                
-                if let sublocality = placemarks[0].subLocality, let adminArea = placemarks[0].administrativeArea {
-                    self.city_textfield.text = sublocality + ", " + adminArea
-                }
-                self.zip_textfield.text = placemarks[0].postalCode
-            }
-            self.lineOne_textfield.resignFirstResponder()
-        }
+        self.searchResults = completer.results
+        let addresses = searchResults.map({ $0.title + " " + $0.subtitle })
+        self.configureDropdown(addresses)
     
     }
     
